@@ -140,23 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./">My Python Studying</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/exusiaiwei/My-Python-Learning" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -301,7 +284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Object-Oriented Programming (OOP) is a programming paradigm where the main ideas are to encapsulate data and operations on data into objects, abstract similar objects into classes, and achieve code reuse and modularization through encapsulation, inheritance and polymorphism of classes.</p>
 <section id="review-of-objects-and-classes" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="review-of-objects-and-classes"><span class="header-section-number">8.1</span> Review of Objects and Classes</h2>
-<p>We have already introduced the concepts of objects and classes in <a href="data_structures.html#sec-objects-and-classes" class="quarto-xref"><span>Section 6.6</span></a>. We can summarize as follows:</p>
+<p>We have already introduced the concepts of objects and classes in <span class="quarto-unresolved-ref">?sec-objects-and-classes</span>. We can summarize as follows:</p>
 <ul>
 <li>Class: A class is an abstract description of a category of things. It defines the static attributes (fields) and dynamic behaviors (methods) of such things. A class is the template for creating objects and an object is an instance of a class.<br>
 </li>
@@ -327,14 +310,14 @@ Tip
 <section id="class-construction-functional-part" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="class-construction-functional-part"><span class="header-section-number">8.2</span> Class Construction (Functional Part)</h2>
 <p>A simplest class looks like:</p>
-<div id="cba155f5" class="cell" data-execution_count="1">
+<div id="725c62ac" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Person:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span>  <span class="co"># An empty block  </span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> Person()</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;__main__.Person object at 0x0000020D28BBD510&gt;</code></pre>
+<pre><code>&lt;__main__.Person object at 0x000002446DC1DA90&gt;</code></pre>
 </div>
 </div>
 <p>We use the <code>class</code> statement and class name to create a new class, followed by an indented block of statements that make up the body of the class. Here, the <code>pass</code> statement denotes an empty block since Python block statements cannot be empty.</p>
@@ -344,7 +327,7 @@ Tip
 <h3 data-number="8.2.1" class="anchored" data-anchor-id="methods-functional-implementation-of-classes"><span class="header-section-number">8.2.1</span> Methods: Functional Implementation of Classes</h3>
 <p>Classes and objects can have methods just like functions, the only difference being the first parameter of methods is <code>self</code>.</p>
 <p>Below is a simple example of class methods:</p>
-<div id="e94e584e" class="cell" data-execution_count="2">
+<div id="b34f0c7f" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Person:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> say_hi(<span class="va">self</span>):</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">'Hello, how are you?'</span>)</span>
@@ -372,7 +355,7 @@ Tip
 <p>When defining class methods, we don’t know beforehand which instance object will call this method in the future. So we need a parameter (conventionally called <code>self</code>) to receive the runtime passed-in instance object, so that this method can access properties of the instance or call other instance methods.</p>
 </div>
 </div>
-<div id="38fc0264" class="cell" data-execution_count="3">
+<div id="6ac10ae0" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name):</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
@@ -427,7 +410,7 @@ Magic Methods
 </div>
 <p>The first parameter of the <code>__init__</code> method is always <code>self</code>, i.e.&nbsp;a reference to the object itself. In the <code>__init__</code> method we can set initial state of the instance, for example, assigning some initial attribute values.</p>
 <p>Below is an example of a class with an <code>__init__</code> method:</p>
-<div id="2192b393" class="cell" data-execution_count="4">
+<div id="ebd10d27" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Dog:</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.name <span class="op">=</span> name</span>
@@ -462,7 +445,7 @@ Caution
 <li>Instance variables: Belonging to the object, each object instance has its own copy. Modifying it on one object does not affect others.</li>
 </ul>
 <p>Below is an example for understanding class variables and instance variables:</p>
-<div id="01d8ea7c" class="cell" data-execution_count="5">
+<div id="b1163d2c" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Robot:</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Represents a robot, with a name."""</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -551,7 +534,7 @@ We have 0 robots.</code></pre>
 <p>Inheritance is an important feature in object-oriented programming. It allows us to define a new class that inherits attributes and methods from one or more existing classes. The inherited class is called the parent class (or base class), and the inheriting class is called the child class (or derived class).</p>
 <p>The main purpose of inheritance is to achieve code reuse. Through inheritance, the child class can inherit attributes and methods of the parent class so that identical code does not need to be rewritten.</p>
 <p>In Python, inheritance is achieved by specifying the parent class in parentheses after the class name when defining a class. Below is a simple inheritance example:</p>
-<div id="e5ac3f5d" class="cell" data-execution_count="6">
+<div id="c8a69bb0" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> SchoolMember:</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''Represents any school member.'''</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, age):</span>

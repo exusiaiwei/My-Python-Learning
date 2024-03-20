@@ -140,23 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./">My Python Studying</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/exusiaiwei/My-Python-Learning" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -300,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="10.1" class="anchored" data-anchor-id="handling-exceptions"><span class="header-section-number">10.1</span> Handling Exceptions</h2>
 <p>We can use <code>try..except</code> statements to catch exceptions. The <code>try</code> statement contains the block of code that may raise an exception, as well as the exception handlers that handle those exceptions. The <code>except</code> block contains all the error handlers.</p>
 <p>The basic syntax of a <code>try..except</code> statement is:</p>
-<div id="3dcbbf6f" class="cell" data-execution_count="1">
+<div id="88599bea" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code that may raise exception</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> <span class="dv">0</span>  </span>
@@ -326,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-else-statement" class="level3" data-number="10.1.1">
 <h3 data-number="10.1.1" class="anchored" data-anchor-id="the-else-statement"><span class="header-section-number">10.1.1</span> The <code>else</code> Statement</h3>
 <p>The <code>else</code> statement is used to specify a block of code to execute if no exception occurs. The basic syntax of the <code>else</code> statement is:</p>
-<div id="4e953748" class="cell" data-execution_count="2">
+<div id="f93a940e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code that may raise exception  </span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> <span class="dv">1</span>   </span>
@@ -349,7 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-finally-statement" class="level3" data-number="10.1.2">
 <h3 data-number="10.1.2" class="anchored" data-anchor-id="the-finally-statement"><span class="header-section-number">10.1.2</span> The <code>finally</code> Statement</h3>
 <p>The <code>finally</code> statement is used to specify a block of code to execute regardless of whether an exception occurs or not. The <code>finally</code> statement is usually used to release resources or perform clean-up operations. The basic syntax of the <code>finally</code> statement is:</p>
-<div id="78b73eaa" class="cell" data-execution_count="3">
+<div id="4cd0113c" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Code that may raise exception</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> <span class="dv">0</span>   </span>

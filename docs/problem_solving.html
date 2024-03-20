@@ -140,23 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./">My Python Studying</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/exusiaiwei/My-Python-Learning" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -356,7 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="the-.format-method" class="level4" data-number="7.3.1.1">
 <h4 data-number="7.3.1.1" class="anchored" data-anchor-id="the-.format-method"><span class="header-section-number">7.3.1.1</span> The <code>.format()</code> Method</h4>
 <p>The <code>.format()</code> method is a way of formatting strings where we can insert values into string template placeholders. For example:</p>
-<div id="38854284" class="cell" data-execution_count="1">
+<div id="319bc83d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, </span><span class="sc">{}</span><span class="st">"</span>.<span class="bu">format</span>(name)) <span class="co"># Prints: Hello, Alice</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -365,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>In this code, <code>{}</code> is a placeholder where variable <code>name</code> can be passed into <code>.format()</code> method and automatically replaces the placeholder.</p>
 <p>We can also add numbers inside <code>{}</code> to specify positions of <code>.format()</code> method arguments:</p>
-<div id="58118474" class="cell" data-execution_count="2">
+<div id="c3d217db" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>firstname <span class="op">=</span> <span class="st">"Alice"</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>lastname <span class="op">=</span> <span class="st">"Bob"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, </span><span class="sc">{0}</span><span class="st"> </span><span class="sc">{1}</span><span class="st">"</span>.<span class="bu">format</span>(firstname, lastname)) <span class="co"># Prints: Hello, Alice Bob</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -379,7 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="f-strings-formatted-string-literals" class="level3" data-number="7.3.2">
 <h3 data-number="7.3.2" class="anchored" data-anchor-id="f-strings-formatted-string-literals"><span class="header-section-number">7.3.2</span> f-strings (Formatted String Literals)</h3>
 <p>In Python 3.6 and later, we usually use f-strings for string formatting, which makes formatting more concise and efficient. F-strings work by prefixing <code>f</code> or <code>F</code> before the string, then write variables or expressions to insert inside <code>{}</code>, Python automatically replaces them with values. For example:</p>
-<div id="a9aaad53" class="cell" data-execution_count="3">
+<div id="5237c921" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Alice"</span> </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Hello, </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">"</span>) <span class="co"># Prints: Hello, Alice</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -387,7 +370,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>We can write simple Python expressions inside <code>{}</code>, Python executes them and replaces <code>{}</code> with the result:</p>
-<div id="a7e09311" class="cell" data-execution_count="4">
+<div id="933f59e0" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Five plus ten is </span><span class="sc">{</span>a <span class="op">+</span> b<span class="sc">}</span><span class="ss">, not </span><span class="sc">{</span><span class="dv">2</span> <span class="op">*</span> (a <span class="op">+</span> b)<span class="sc">}</span><span class="ss">."</span>) <span class="co"># Prints: Five plus ten is 15, not 30.  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -400,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="7.3.3" class="anchored" data-anchor-id="using-os-path-separators-in-python"><span class="header-section-number">7.3.3</span> Using OS Path Separators in Python</h3>
 <p>File path representations differ across operating systems. On Windows systems we use backslash <code>\</code> for paths like <code>C:\Users\Admin\Documents</code>. On UNIX systems (Linux, MacOS) forward slash <code>/</code> is used instead, e.g.&nbsp;<code>/home/admin/Documents</code>.</p>
 <p>However in Python strings, backslash <code>\</code> is a special character used as the escape character for introducing special character sequences. E.g. <code>\n</code> for newline, <code>\t</code> for tab. For example:</p>
-<div id="dbc482e7" class="cell" data-execution_count="5">
+<div id="3ad8e9d4" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello</span><span class="ch">\n</span><span class="st">World"</span>) <span class="co"># Prints:  </span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Hello</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># World</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -410,7 +393,7 @@ World</code></pre>
 </div>
 </div>
 <p>So if we want to use Windows paths like <code>C:\Users\Admin\Documents</code> in Python strings, we need to escape with double backslashes <code>\\</code> like <code>C:\\Users\\Admin\\Documents</code>. Code sample:</p>
-<div id="6312ed63" class="cell" data-execution_count="6">
+<div id="97967a44" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="st">"C:</span><span class="ch">\\</span><span class="st">Users</span><span class="ch">\\</span><span class="st">Admin</span><span class="ch">\\</span><span class="st">Documents"</span> </span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(path) <span class="co"># Prints: C:\Users\Admin\Documents</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -418,7 +401,7 @@ World</code></pre>
 </div>
 </div>
 <p>Additionally, we can use Python raw strings that treat backslashes <code>\</code> literally instead of escape characters. Just prefix string with <code>r</code>:</p>
-<div id="0f31ab85" class="cell" data-execution_count="7">
+<div id="e5dc1f4d" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="vs">r"C:\Users\Admin\Documents"</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(path) <span class="co"># Prints: C:\Users\Admin\Documents </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">

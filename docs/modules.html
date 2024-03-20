@@ -142,23 +142,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./">My Python Studying</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/exusiaiwei/My-Python-Learning" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -315,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In Python, modules can be written in Python or other languages like C/C++ and compiled into binary code. The latter are usually called “compiled modules” or “extension modules”.</p>
 <p>They are commonly used to improve performance (compiled code runs faster) or provide functionality Python itself cannot provide directly (like calling low-level OS APIs).</p>
 <p>See code sample below for module usage:</p>
-<div id="4caba1ec" class="cell" data-execution_count="1">
+<div id="28b167b4" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The script has the name </span><span class="sc">%s</span><span class="st">"</span> <span class="op">%</span> (sys.argv[<span class="dv">0</span>]))</span>
@@ -329,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>The script has the name C:\Conda_data\envs\main\Lib\site-packages\ipykernel_launcher.py
 It has some arguments:
 -f
-C:\Windows\Temp\tmpi_em652r.json
+C:\Windows\Temp\tmpxblcq82g.json
 --HistoryManager.hist_file=:memory:
 
 
@@ -384,7 +367,7 @@ The PYTHONPATH is ['C:\\Conda_data\\envs\\main\\python311.zip', 'C:\\Conda_data\
 <p>Using <code>from...import</code> statements allows us to directly call imported functions or objects without needing to prefix the module name. For example, we can directly import <code>sqrt</code> function from <code>math</code> module, so we don’t need to write <code>math.</code> when calling it.</p>
 <p>The benefit of this approach is we can selectively import only the functions or classes we want to use instead of loading the entire module, saving some memory compared to the first approach. However, having too many <code>from...import</code> statements or importing functions of the same name from multiple modules in code can cause namespace pollution and function conflicts.</p>
 <p>We can also use <code>from...import</code> statements to import multiple functions or classes, for example, importing <code>sqrt</code> and <code>pi</code> from <code>math</code> module:</p>
-<div id="d8c0e15b" class="cell" data-execution_count="2">
+<div id="77517a65" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> sqrt</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sqrt(<span class="dv">16</span>))  <span class="co"># Output: 4.0  </span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -404,7 +387,7 @@ The PYTHONPATH is ['C:\\Conda_data\\envs\\main\\python311.zip', 'C:\\Conda_data\
 <p>When directly running a <code>.py</code> file (e.g.&nbsp;executing <code>python your_script.py</code> from command line), Python automatically sets the <code>__name__</code> attribute to <code>'__main__'</code>. In this case, we say <code>your_script.py</code> runs as a script.</p>
 <p>However, if you import the <code>.py</code> file as a module (e.g.&nbsp;<code>import your_script</code> in another <code>.py</code> file), Python automatically sets <code>__name__</code> attribute to the module’s name (which would be <code>your_script</code> in this example). In this case, we say <code>your_script.py</code> is an imported module.</p>
 <p>See the following sample code:</p>
-<div id="fabb4502" class="cell" data-execution_count="3">
+<div id="55c020ec" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'This program is being run by itself'</span>)  </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
@@ -429,7 +412,7 @@ The PYTHONPATH is ['C:\\Conda_data\\envs\\main\\python311.zip', 'C:\\Conda_data\
 <h2 data-number="5.6" class="anchored" data-anchor-id="making-your-own-modules"><span class="header-section-number">5.6</span> Making Your Own Modules</h2>
 <p>In Python, any <code>.py</code> file can be treated as module. You just need to organize your code properly and save it as a <code>.py</code> file.</p>
 <p>When importing modules, Python interpreter searches for module files in some specific directories, paths of which are stored in <code>sys.path</code> list. If your module is in a path outside these directories, you need to append module path to system path, like the sample code below:</p>
-<div id="4f1adc22" class="cell" data-execution_count="4">
+<div id="2685713f" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">"practical_code/modules"</span>) <span class="co"># Add module path  </span></span>
@@ -444,7 +427,7 @@ Version 0.1</code></pre>
 </div>
 </div>
 <p>Sample code using <code>from..import</code> statement:</p>
-<div id="a8f45c16" class="cell" data-execution_count="5">
+<div id="d9200b80" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">"practical_code/modules"</span>)   </span>
@@ -467,7 +450,7 @@ Version 0.1</code></pre>
 <p>Characteristics: - <code>dir</code> function returns a list containing names of all attributes and methods of an object or module.<br>
 - Returned list is unordered without guaranteed order of attributes and methods. - <code>dir</code> only returns public attributes and methods, not including private ones.<br>
 - If argument is a module name, returned list contains names of all public module attributes and methods. - If argument is an object, returned list contains all attribute and method names of that object.</p>
-<div id="a08f2b76" class="cell" data-execution_count="6">
+<div id="0269e0bf" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Call dir() and print all names in current global scope </span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">dir</span>())  </span>
@@ -535,7 +518,7 @@ Version 0.1</code></pre>
     </code></pre>
 <p>In this structure, <code>my_package</code> is a Python package containing one module <code>module1</code> and one sub-package <code>sub_package</code>. <code>sub_package</code> is also a Python package containing one module <code>module2.py</code>.</p>
 <p>Assuming in <code>module1.py</code> we define a function <code>func1</code>, and in <code>module2.py</code> we define a function <code>func2</code>.</p>
-<div id="f5a60383" class="cell" data-execution_count="7">
+<div id="f3e8dff1" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># File path: my_package/module1.py</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func1():</span>
@@ -547,7 +530,7 @@ Version 0.1</code></pre>
 <span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"This is function 2 from module 2"</span>)     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>In Python we can import and use these functions as:</p>
-<div id="b84d3aec" class="cell" data-execution_count="8">
+<div id="3ced686a" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>sys.path.append(<span class="st">"practical_code/modules"</span>) <span class="co"># Add package path </span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>

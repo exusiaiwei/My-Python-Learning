@@ -140,23 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./">My Python Studying</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/exusiaiwei/My-Python-Learning" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -382,7 +365,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>close</code> method: Used to close the file. After closing, any operations on the file object will fail.</li>
 </ol>
 <p>Below are some sample code:</p>
-<div id="0d4b8bb6" class="cell" data-execution_count="1">
+<div id="df0a2a33" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>file1 <span class="op">=</span> <span class="bu">open</span>(<span class="vs">r"practical_code\input_and_output\myfile.txt"</span>, <span class="st">"r"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>content <span class="op">=</span> file1.read()</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(content) </span>
@@ -392,13 +375,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 And this is the second line.</code></pre>
 </div>
 </div>
-<div id="7e0aabb4" class="cell" data-execution_count="2">
+<div id="33620836" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>file2 <span class="op">=</span> <span class="bu">open</span>(<span class="vs">r"practical_code\input_and_output\myfile2.txt"</span>, <span class="st">"w"</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>file2.write(<span class="st">"This is a test"</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>file2.close()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>When doing file operations, should always remember to close the file after finishing operation. To better manage file resources, Python provides the <code>with</code> statement that closes file automatically:</p>
-<div id="4249e447" class="cell" data-execution_count="3">
+<div id="49b29b6d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="vs">r"practical_code\input_and_output\myfile.txt"</span>, <span class="st">"r"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    content <span class="op">=</span> <span class="bu">file</span>.read()</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(content)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -408,7 +391,7 @@ And this is the second line.</code></pre>
 </div>
 </div>
 <p>Below is a more complex example:</p>
-<div id="f85efa3b" class="cell" data-execution_count="4">
+<div id="ce8ad60d" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>poem <span class="op">=</span> <span class="st">'''\  </span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="st">Programming is fun</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="st">When the work is done  </span></span>
@@ -457,7 +440,7 @@ if you wanna make your work also fun:
 <li><code>pickle.load(file)</code>: Reads byte streams from a file and converts them to Python objects.</li>
 </ul>
 <p>Below is a basic usage example of this module:</p>
-<div id="0eb7da2a" class="cell" data-execution_count="5">
+<div id="97cf5a58" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pickle</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
@@ -491,7 +474,7 @@ if you wanna make your work also fun:
 </ul>
 <p>When writing a program using Unicode characters, we should ensure the program uses UTF-8 encoding. This way our program can handle text in all languages of the world.</p>
 <p>Below is an example handling Unicode characters:</p>
-<div id="c59a2b73" class="cell" data-execution_count="6">
+<div id="88b6098d" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> io.<span class="bu">open</span>(<span class="vs">r"practical_code\input_and_output\zh_CN.txt"</span>, <span class="st">"wt"</span>, encoding<span class="op">=</span><span class="st">"utf-8"</span>) </span>

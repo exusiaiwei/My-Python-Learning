@@ -140,23 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./">My Python Studying</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/exusiaiwei/My-Python-Learning" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.pdf">
-              <i class="bi bi-bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="./My-Python-Studying.epub">
-              <i class="bi bi-bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
     </div>
       </div>
@@ -297,7 +280,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Functions are basic building blocks in programming that allow us to name a block of code and reuse it wherever needed. The act of executing these statements is called calling the function.</p>
 <p>In our learning process, we have already come across and used many of Python’s built-in functions like <code>len</code> and <code>range</code>.</p>
 <p>We use the <code>def</code> keyword to define functions. The <code>def</code> keyword is followed by the function name and parentheses <code>()</code>. The parentheses may contain some parameters (preset variable names), and the line ends with a colon <code>:</code>.</p>
-<div id="3adc165f" class="cell" data-execution_count="1">
+<div id="06da7946" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> say_hello():</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Block belonging to the function </span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'hello world'</span>)  </span>
@@ -328,7 +311,7 @@ hello world</code></pre>
 <li>Arguments assign concrete values to the parameters defined in the function. Also separated by commas.</li>
 </ul>
 <p>This concept is analogous to a recipe and cooking. The list of ingredients on a recipe (e.g.&nbsp;certain grams of flour, certain grams of sugar) is like the parameter list, while the actual amount of flour and sugar you use is like the arguments.</p>
-<div id="51734297" class="cell" data-execution_count="2">
+<div id="52db8cc9" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_max(a, b):</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> a <span class="op">&gt;</span> b:  </span>
@@ -365,7 +348,7 @@ hello world</code></pre>
 </li>
 <li>Local variables inside functions are viewed as independent even if variables with the same names exist outside the function. Regardless of identical names, local variables inside functions have no relation with variables outside functions.</li>
 </ul>
-<div id="a19aa0b0" class="cell" data-execution_count="3">
+<div id="ef367cf1" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">50</span>  </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -399,7 +382,7 @@ x is still 50</code></pre>
 </li>
 <li>If you want to operate on variables outside functions inside the function, it’s recommended to use the <code>global</code> statement to explicitly indicate you are manipulating a globally defined variable.</li>
 </ul>
-<div id="c5bf9bea" class="cell" data-execution_count="4">
+<div id="084e7422" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">50</span>  </span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -425,7 +408,7 @@ Value of x is 2</code></pre>
 <h2 data-number="4.4" class="anchored" data-anchor-id="default-parameter-values"><span class="header-section-number">4.4</span> Default Parameter Values</h2>
 <p>We can make some function parameters optional by setting default parameter values. When the user does not explicitly provide argument values, the function will use these set default values.</p>
 <p>This can be achieved by assigning default values after the parameter names in the function definition with an equals sign (=).</p>
-<div id="ddd5fe97" class="cell" data-execution_count="5">
+<div id="71dc004a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> say(message, times<span class="op">=</span><span class="dv">1</span>):</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(message <span class="op">*</span> times)</span>
@@ -464,7 +447,7 @@ WorldWorldWorldWorldWorld</code></pre>
 </li>
 <li>As long as the other parameters have default values, we can assign values only to the parameters we want.</li>
 </ul>
-<div id="835f3715" class="cell" data-execution_count="6">
+<div id="0b8eef05" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python  </span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(a, b<span class="op">=</span><span class="dv">5</span>, c<span class="op">=</span><span class="dv">10</span>):</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'a is'</span>, a, <span class="st">'and b is'</span>, b, <span class="st">'and c is'</span>, c)</span>
@@ -493,7 +476,7 @@ a is 100 and b is 5 and c is 50</code></pre>
 <h2 data-number="4.6" class="anchored" data-anchor-id="variable-arguments"><span class="header-section-number">4.6</span> Variable Arguments</h2>
 <p>Variable arguments are a special kind of parameter that can accept any number of arguments. This is very useful in cases when you don’t know beforehand how many arguments will be passed to the function, or the number varies.</p>
 <p>In Python, variable arguments are indicated by adding an asterisk (*) before the parameter name.</p>
-<div id="2a049e47" class="cell" data-execution_count="7">
+<div id="4db98d51" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> total(a<span class="op">=</span><span class="dv">5</span>, <span class="op">*</span>numbers, <span class="op">**</span>phonebook):  </span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'a'</span>, a)</span>
@@ -530,7 +513,7 @@ Inge 1560</code></pre>
 <h2 data-number="4.7" class="anchored" data-anchor-id="the-return-statement"><span class="header-section-number">4.7</span> The <code>return</code> Statement</h2>
 <p>The <code>return</code> statement is used to return results from functions or end function execution.</p>
 <p>Inside a function, an expression after a <code>return</code> statement can have a value, and that value gets returned from the function.</p>
-<div id="ec11e701" class="cell" data-execution_count="8">
+<div id="dfd7d766" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> maximum(x, y):</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">&gt;</span> y:</span>
@@ -561,7 +544,7 @@ Inge 1560</code></pre>
 <h2 data-number="4.8" class="anchored" data-anchor-id="docstrings"><span class="header-section-number">4.8</span> Docstrings</h2>
 <p>Docstrings refer to documentation strings in Python that are a way of documenting functions, methods, classes, modules etc with an invaluable reference purpose.</p>
 <p>Docstrings are located on the first line of function, method, class and module definitions, enclosed within a pair of triple quotes <code>"""</code> or <code>'''</code>, which can be single line or multi-line.</p>
-<div id="1fd6aedf" class="cell" data-execution_count="9">
+<div id="827231f4" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code sample from: A Byte of Python</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_max(x, y):</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''Prints the maximum of two numbers.</span></span>
